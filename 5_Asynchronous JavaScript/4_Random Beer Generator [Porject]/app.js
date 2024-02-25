@@ -1,30 +1,22 @@
-// Promises and chaining
+const beerBtn = document.querySelector("#beer-button");
+const randomBeerTitle = document.querySelector("#random-beer");
+const randomBeerDesc = document.querySelector("#description");
+const beerImage = document.querySelector("#beer-image");
 
-// fetch("GET", "https://restcountries.com/v3.1/all")
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
+function getData() {
+  fetch("https://api.punkapi.com/v2/beers/random")
+    .then((response) => response.json())
+    .then((data) => {
+      const name = data[0].name;
+      const description = data[0].description;
+      const volumeUnit = data[0].volume.unit;
+      const volumeValue = data[0].volume.value;
+    
+      randomBeerTitle.textContent = name + " | " + volumeValue + volumeUnit;
+      randomBeerDesc.textContent = description;
+      beerImage.setAttribute('src', data[0].image_url);
+    });
+}
 
-// Promise is an object representing the completion or failure of Asynchronous operation
-
-// fetch('https://restcountries.com/v3.1/all')
-//     .then(response => response.json()) // json() function is asynchronous
-//     .then(data => console.log(data))
-
-// old school
-fetch("https://restcountries.com/v3.1/all")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    console.log(data);
-  });
-
-
-fetch('https://restcountries.com/v3.1/all')
-    .then(response => response.json()) // json() function is asynchronous
-    .then(data => console.log(data))
-    .catch(error => console.error(error))
-// each "then" block is return another promise
-// so essentially multiple asynchronous operations have been made to run in order after the other
-// so in anther promise or asynchronous operation have been put in event queue
-// this event queue will run after main threat finish Processing
+getData();
+beerBtn.addEventListener("click", getData);
