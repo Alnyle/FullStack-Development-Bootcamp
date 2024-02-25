@@ -1,0 +1,45 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Playfair Display';
+    margin: 12em;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: normal;
+    margin-bottom: 6.8rem;
+}
+
+span {
+    color: #07801E;
+}
+
+.container {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    height: 400px;
+
+
+    /* flex-wrap: wrap; no-wrap */
+    /* justify-content: flex-start; flex-end; center; space-around; space-between; space-evenally */
+    /* align-items:  flex-start; flex-end; center; space-around; space-between; space-evenally* /
+    /* flex-direction: values ( row;  row-reverse; column; column-reverse) */
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.second {
+    /* align-self: center; give the element the ability to align it's self */
+    /* align-self: values ( row;  row-reverse; column; column-reverse) */
+    /* flex-grow: 1.4; make the element in flexbox bigger compare to other elements in flexbox */
+}
+ 

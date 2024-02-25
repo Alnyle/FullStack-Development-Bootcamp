@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p>Please rate our service</p>
+
+    <p>
+        <label for="very-poor">
+            <input type="radio" name="rate" value="Very poor" id="very-poor"> Very Poor
+        </label>
+
+
+        <label for="poor">
+            <input type="radio" name="rate" value="Poor" id="poor"> Poor
+        </label>
+
+        <label for="ok">
+            <input type="radio" name="rate" value="Ok" id="Ok"> Ok
+        </label>
+
+        <label for="good">
+            <input type="radio" name="rate" value="Good" id="good"> Good
+        </label>
+
+        <label for="very-good">
+            <input type="radio" name="rate" value="Very Good" id="Very Good"> Very Good
+        </label>
+    </p>
+
+    <p>
+        <button id="btnRate">submit</button>
+    </p>
+    <p id="result"></p>
+    <script>
+        let btn = document.getElementById('btnRate');
+        let re = document.getElementById('result');
+
+
+        btn.addEventListener('click', () => {
+            // The getElementsByName() returns a live NodeList of elements with a specified name.
+            let rates = document.getElementsByName('rate');
+            rates.forEach((rate) => {
+                if (rate.checked) {
+                    re.innerHTML = "You Select : " + rate.value;
+                }
+            });
+        })
+    </script>
+</body>
+</html>

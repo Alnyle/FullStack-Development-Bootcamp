@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #9BC588;
+  --secondary-color: #E8F5E2;
+  --bg-color: #000000;
+  --link-color: #000000;
+  --border-color: #000000;
+  --inner-panel-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.wrapper {
+  margin: 2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li, p, a {
+  font-size: 1.6rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+svg {
+  width: 100%;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hide-tablet {
+    display: none;
+  }
+}/*# sourceMappingURL=global.css.map */

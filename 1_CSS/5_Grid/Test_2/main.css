@@ -1,0 +1,94 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: #F8EFE8;
+}
+
+p {
+    font-size: 2rem;
+}
+
+img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+}
+
+.wrapper {
+    max-width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+     "right top top"
+     "right bottom bottom";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    gap: 1em;
+    margin: 20em auto;
+}
+
+.right {
+    grid-area: right;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    background-color: white;
+}
+
+.top {
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.bottom {
+    grid-area: bottom;
+    background-color: #E5DAD0;
+    display: flex;
+    align-items: center;
+}
+
+.top, .bottom, .right {
+    padding: 4.3em;
+    align-items: center;
+    border-radius: .8em;
+}
+
+
+.right p {
+    margin-top: 1rem;
+}
+
+
+h1 {
+    font-weight: 2rem;
+}
+
+
+.bottom p {
+    font-size: 1.4rem;
+    margin-top: .8rem;
+}
+
+
+
+.profile {
+    text-align: center;
+}
+
+.profile p {
+    margin-top: 1.5rem;
+}

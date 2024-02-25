@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <ul id="menu">
+        <li>Home</li>
+        <li>Products</li>
+        <li class="current">Customer Support</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>News</li>
+        <li>About Us</li>
+    </ul>
+
+    <!-- <script src="main.js"></script> -->
+    <script>
+
+        let getSiblings = function(e) {
+            
+            // store sibling in array of object
+            let siblings = [];
+
+            // if no parent return no sibling (empty array);
+            if (!e.parentNode) {
+                return siblings;
+            }
+
+            // get the first the element of parent node
+            let sibling = e.parentNode.firstChild;
+
+            while(sibling) {
+                // ensure the node type is element node and second condition ensure the (e) which is the start element itself is not included in the list of siblings. 
+                if (sibling.nodeType === 1 && sibling !== e) {
+                    siblings.push(sibling);
+                }
+                sibling = sibling.nextSibling;
+            }
+
+            return siblings;
+        };
+
+        let siblings = getSiblings(document.querySelector('.current'));
+        siblingsText = siblings.map(e => e.textContent);
+        // siblingsText = siblings.map(e => e.innerHTML);
+        console.log(siblingsText);
+
+
+
+    </script>
+</body>
+</html>

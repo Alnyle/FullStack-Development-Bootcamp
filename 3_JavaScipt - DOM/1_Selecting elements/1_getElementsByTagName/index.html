@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript getElementsByTagName() Demo</h1>
+    <h2>First heading</h2>
+    <p>This is the first paragraph.</p>
+    <h2>Second heading</h2>
+    <p>This is the second paragraph.</p>
+    <h2>Third heading</h2>
+    <p>This is the third paragraph.</p>
+
+    <button id="btnCounter">click to count h2</button>
+    <p id="outPut"></p>
+
+    <script>
+        let btn = document.getElementById('btnCounter');
+        let paragraphs = document.getElementsByTagName('h2');
+        let outPut = document.getElementById('outPut');
+
+        btn.addEventListener('click', () => {
+            // alert(`The number of h2 is: ${paragraphs.length}`);
+            outPut.innerText = `The number of h2 is: ${paragraphs.length}`;
+        })
+    </script>
+    
+</body>
+</html>

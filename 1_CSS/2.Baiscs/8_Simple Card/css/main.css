@@ -1,0 +1,54 @@
+
+
+body {
+    background-color: #20262C;
+    margin: 0;
+    height: 100vh; /* View port screen size in horizontal: mean 100 % horizontal */
+    display: grid;
+    place-content: center;
+    font-family: 'poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 a {
+    color: white;
+    font-size: 2.5rem;
+    line-height: 120%;
+}
+
+article {
+    width: 300px;
+    background-color: #2F3740;
+    padding: 1.125em;
+    border-radius: 1em;
+}
+
+img {
+    width: 100%;
+    border-radius: .4em
+}
+
+.tag {
+    background-color: #455260;
+    color: #BEFF00;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .2em .6em;
+    border-radius: .4em;
+    margin-top: 1em; 
+    display: inline-block;
+}
+
+a.cta {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+a.cta p {
+    color: #B1C4D9;
+}
