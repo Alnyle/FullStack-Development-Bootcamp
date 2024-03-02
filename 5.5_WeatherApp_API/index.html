@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move bob </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="weather_header">
+           <form action="" class="weather_search">
+            <input type="text" placeholder="Search for a city" class="weather_searchFrom">
+            <i class="fa-solid fa-magnifying-glass"></i>
+           </form>
+
+           <div class="weather_units">
+            <span class="weather_units_celsius">&#176C</span>
+            <span class="weather_units_farenheit">&#176F</span>
+           </div>
+        </div>
+
+        <div class="weather_body">
+            <h1 class="weather_city">London UK</h1>
+            <div class="weather_dateTime">
+                <p>Saturday 2 March 2024 12:14</p>
+            </div>
+            <div class="weather_forecast">
+                <p>Clear</p>
+            </div>
+            <div class="weather_icon">
+                <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="">
+            </div>
+
+            <p class="weather_temperature">
+               18&#176
+            </p>
+
+            <div class="weather_minmax">
+                <p class="minDegree">min: 15&#176</p>
+                <p class="maxDegree">max: 20&#176</p>
+            </div>
+
+            <div class="weather_info">
+                <div class="weather_card">
+                    <i class="fa-solid fa-temperature-full"></i>
+                    <div class="weather_realfeel">
+                        <p>Real Feel</p>
+                        <p id="Realfeel_value">18&#176</p>
+                    </div>
+                </div>
+
+                
+                <div class="weather_card">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="weather_humidiy">
+                        <p>Humidity</p>
+                        <p id="Humidity_value">18&#176</p>
+                    </div>
+                </div>
+                
+                <div class="weather_card">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="weather_wind">
+                        <p>Wind</p>
+                        <p id="Wind_value">18&#176</p>
+                    </div>
+                </div>
+
+                <div class="weather_card">
+                    <i class="fa-solid fa-guage_hihg"></i>
+                    <div>
+                        <p>Pressure</p>
+                        <p id="Pressure_value">18&#176</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src='app.js'></script>
+    <script src="https://kit.fontawesome.com/3fee5cf858.js" crossorigin="anonymous"></script>
+</body>
+</html>
