@@ -1,4 +1,4 @@
-summary of my learning journey until now! 😁
+#summary of my learning journey until now! 😁
 
 That's a fantastic journey! Here's a description of your hard work and dedication in learning web development:
 
