@@ -1,0 +1,15 @@
+{
+  "name": "7_crypto-module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --env-file=.env  index.js"
+  },
+  "author": "Ahmed Elniel",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
