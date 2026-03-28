@@ -1,0 +1,1 @@
+Shape.call(this, color)

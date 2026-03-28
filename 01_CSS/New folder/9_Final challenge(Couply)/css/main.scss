@@ -1,0 +1,182 @@
+@use 'variables';
+@use 'global';
+
+.bg {
+    background-color: var(--secondary-color);
+}
+
+header.primary {
+
+    border-bottom: 1px solid #000;
+
+    .wrapper {
+        margin-top: 0;
+        padding-top: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: .6em;
+
+        p {
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+
+}
+
+/* Hero Mobile */ 
+
+.hero {
+    padding-bottom: 2em;
+    .left-col {
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        h1 {
+            font-size: 3.2rem;
+            line-height: 125%;
+        }
+
+        .bottom {
+            margin-top: 1em;
+            .profiles {
+               margin: 1.6em;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: cover;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                    border: 5px solid white;
+                    margin: -8px;
+                }
+            }
+        }
+
+    }
+
+    /* right-col */
+    .features li {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1.6em;
+        line-height: 150%;
+
+        .feature-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            background-color: var(--bg-color);
+            color: white;
+            border-radius: 50%;
+        }
+
+        .feature-info {
+            font-size: 2rem;
+            strong {
+                color: #608A4D;
+            }
+        }
+    }
+
+    a.cta-btn {
+        width: 100%;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        padding: .8em;
+        margin-top: 1.2em;
+        border-radius: 0.25rem;
+        border: 2px solid #000;
+        background: #9BC588;
+        box-shadow: 4px 4px 0px 0px #000;
+
+        p {
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+    }
+
+
+}
+
+/* Company Trust */ 
+
+.Company-trust{
+    padding: 2em;
+    background-color: var(--bg-color);
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2.6em;
+
+        li {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+/* Gallery */
+
+
+.gallery {
+
+
+    .cart {
+        width: 100%;
+        min-height: 300px;
+        margin-top: 1.6em;
+        border-radius: .4em;
+        border: 2px solid #000;
+        background: #9BC588;
+        box-shadow: 4px 4px 0px 0px #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .cart-title {
+            background-color: white;
+            padding: 1.6em 1.8em;
+            font-weight: bold;
+        }
+
+        .cart-price {
+            background-color: var(--bg-color);
+            width: auto;
+        }
+    }
+
+    .cart:nth-of-type(1) {
+        background-image: url('/assets/shoes.jpg');
+        background-size: cover;
+    }
+    .cart:nth-of-type(2) {
+        background-image: url('/assets/shoes.jpg');
+        background-size: cover;
+    }
+    .cart:nth-of-type(3) {
+        background-image: url('/assets/shoes.jpg');
+        background-size: cover;
+    }
+}

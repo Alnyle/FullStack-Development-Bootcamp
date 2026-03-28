@@ -1,0 +1,12 @@
+{
+  "name": "1_basics",
+  "version": "1.0.0",
+  "description": "\u001b Node Js basics ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmed Elniel",
+  "license": "ISC"
+}

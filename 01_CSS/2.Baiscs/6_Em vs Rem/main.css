@@ -1,0 +1,45 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    font-family: 'poppins';
+    background-color: rgb(233, 233, 233);
+}
+
+.container {
+    font-size: 16px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+}
+.card {
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 1em;
+    padding: 0 2em;
+}
+
+
+.card1 h1 {
+    font-size: 2em;
+}
+
+/* Em Inheritance from parent => padding, margin*/
+.card1 p {
+    font-size: 1em; 
+}
+
+/* Rem Inheritance from html element => typography */
+.card2 h1 {
+    font-size: 2rem;
+}
+
+
+.card2 p {
+    font-size: 1rem;
+}

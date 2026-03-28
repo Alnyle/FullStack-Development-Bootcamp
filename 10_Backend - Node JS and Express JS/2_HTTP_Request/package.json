@@ -1,0 +1,15 @@
+{
+  "name": "1_basics",
+  "version": "1.0.0",
+  "description": "\u001b Node Js basics ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --env-file=.env  server2.js"
+  },
+  "author": "Ahmed Elniel",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

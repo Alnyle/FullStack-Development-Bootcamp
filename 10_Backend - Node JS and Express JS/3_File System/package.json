@@ -1,0 +1,15 @@
+{
+  "name": "3_file-system",
+  "version": "1.0.0",
+  "description": "files system in node js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --env-file=.env  index.js"
+  },
+  "author": "Ahmed Elniel",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

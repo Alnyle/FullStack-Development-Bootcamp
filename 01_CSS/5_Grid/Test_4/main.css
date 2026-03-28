@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #E6E6E6;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.wrapper {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    gap: 1em;
+    align-items: center;
+    margin: 20em auto;
+}
+
+.field {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 2.4rem;
+    border-radius: 1rem;
+}
+
+.field p {
+    flex: 2;
+}
+
+.field .icons {
+    display: flex;
+    gap: 1.6rem;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    background-color: #2793FF;
+    color: white;
+    border-radius: 1rem;
+}
+
+a:hover {
+    background-color: #2076cc;
+}
+

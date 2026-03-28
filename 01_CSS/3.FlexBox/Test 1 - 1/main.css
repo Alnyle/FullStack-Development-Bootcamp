@@ -1,0 +1,48 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #E2F1FF;
+    font-family: 'poppins';
+}
+
+.container {
+    padding: 3.4em 9.8em 4.1em 3.4em;
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+    border-radius: 0.625rem;
+    background: #E2F1FF;
+    box-shadow: 10px 10px 40px 0px rgba(167, 195, 221, 0.49);
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #697E90;
+}
+
+p {
+    font-size: 2rem;
+}
+
+
+
+.col:nth-of-type(1), .col:nth-of-type(2) {
+    font-weight: bold;
+}
+
+.t-items p {
+    margin-top: 1.3em;
+}

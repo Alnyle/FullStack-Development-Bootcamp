@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Consolas', sans-serif;
+    background-color: #DBF3E3;
+}
+
+
+.wrapper {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20em auto;
+    gap: 2em;
+}
+
+
+.col:nth-of-type(3) {
+    background-image: url('assets/img1.jpg');
+    background-size: cover;
+}
+
+.col {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.col:nth-of-type(1) {
+    grid-template-rows: 1fr 20%;
+}
+
+.left-top {
+    background-image: url('assets/img2.jpg');
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content {
+    background-color: white;
+    padding: 2em;
+}
+
+.content h1 {
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.left-bottom {
+    background-image: url('assets/img3.jpg');
+    background-size: cover;
+}
+
+.middle-top {
+    color: white;
+    background-color: #33A559;
+    padding: 2em;
+}
+
+.middle-top  h1 {
+    font-size: 2.6rem;
+}
+
+.middle-top p {
+    font-size: 1.8rem;
+    margin-top: .8em;
+    line-height: 140%;
+}
+
+.middle-bottom {
+    color: #79BA8F;
+    background-color: #AFDDBE;
+    font-size: 4.9rem;
+    display: grid;
+    place-content: center;
+}
