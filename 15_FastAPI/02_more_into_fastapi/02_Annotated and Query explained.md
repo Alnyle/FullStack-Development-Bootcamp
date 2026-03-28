@@ -119,6 +119,11 @@ That means:
 
 * * *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+Do you want me to also show you the **older (pre-Python 3.9)** way of writing the same function **without `Annotated`**, so you can compare?
+>>>>>>> 31f82b2c14e466bc851b0b46ccb5c39da835771e
 =======
 
 Do you want me to also show you the **older (pre-Python 3.9)** way of writing the same function **without `Annotated`**, so you can compare?
