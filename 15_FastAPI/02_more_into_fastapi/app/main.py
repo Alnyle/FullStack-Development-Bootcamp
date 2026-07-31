@@ -81,6 +81,11 @@ async def create_book(book_request: BookRequest):
     BOOKS.append(new_book)
     
 
+# In FastAPI, Path is a helper function used to validate and document path parameters (the values that appear in the URL).
+# Path(gt=0) tells FastAPI:
+# The parameter comes from the URL path.
+# It must be greater than 0 (gt = greater than).
+
 @app.get('/books/{book_id}', status_code=status.HTTP_200_OK)
 async def get_book(book_id: int = Path(gt=0)):
     

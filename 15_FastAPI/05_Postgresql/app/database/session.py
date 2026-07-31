@@ -1,0 +1,25 @@
+from typing import Annotated
+
+from fastapi import Depends
+from sqlalchemy import create_engine
+from sqlmodel import SQLModel, Session
+
+engine = create_engine(
+    url="sqlite:///sqlite.db",
+    echo=True, # I want to print the exceted sql query on the terminal
+    connect_args={ "check_same_thread": False }
+)
+
+
+
+def create_db_tables():
+    from schemas import Shipment
+    SQLModel.metadata.create_all(bind=engine)
+
+
+def get_session():
+    with Session(engine) as session:
+        yield session
+        
+        
+SessionDep = Annotated[Session, Depends(get_session)]
